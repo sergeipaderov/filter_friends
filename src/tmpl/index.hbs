@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{htmlWebpackPlugin.options.title}}</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="https://vk.com/js/api/openapi.js?151" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Permanent+Marker" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <div class="box">
+        <div class="box__title">
+            <div class="box__title-text">Friend´s list</div>
+            <div class="box__title-close"><div class="close"></div></div>
+        </div>
+        <div class="box__content">
+            <div class="box__filter">
+                <div class="filter-left">
+                    <label class="label">
+                        <input type="text" class="input input-left" name="filter-left" placeholder="Enter friend's name">
+                    </label>
+                </div>
+                <div class="filter-right">
+                    <label class="label">
+                        <input type="text" class="input input-right" name="filter-right" placeholder="Enter friend's name">
+                    </label>
+                </div>
+            </div>
+            <div class="block">
+                <div class="block-content">
+                    <div class="block-content__title">
+                        Your friends
+                    </div>
+                        <ul class="block-content__body friends_js">
+                        </ul>
+                </div>
+                <div class="block-content">
+                    <div class="block-content__title">
+                        Choosed friends
+                    </div>
+                    <ul class="block-content__body choosed_js">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="box__footer">
+            <button class="btn-save">Save</button>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
